@@ -39,3 +39,14 @@
 }
 
 /* Nav bar CSS ends */
+
+/* Background image CSS starts */
+
+.bg-image {
+    background: url("../images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    min-height: 100vh;
+}
+/* Background image CSS ends */
