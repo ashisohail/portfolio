@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Fira+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+/* Nav bar CSS starts */
+
+.nav-container {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    align-items: center; 
+    background-color: whitesmoke;
+    width: 100vw;
+}
+
+.nav-bar {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.nav-bar > a {
+    text-decoration: none;
+    font-family: Bruno Ace, sans-serif;
+    font-size: small;
+    font-weight: bolder;
+    color: rgb(20, 14, 14);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-bar > a:hover {
+    opacity: 0.5;
+    transform: scale(1.1);  
+}
+
+/* Nav bar CSS ends */
