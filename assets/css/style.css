@@ -17,7 +17,7 @@
     width: 100vw;
     position: fixed;
     top: 0;
-    z-index: 100;
+    overflow: hidden;
 }
 
 .nav-bar {
@@ -29,7 +29,7 @@
 
 .nav-bar > a {
     text-decoration: none;
-    font-family: Bruno Ace, sans-serif;
+    font-family: 'Bruno Ace', sans-serif;
     font-size: small;
     font-weight: bolder;
     color: rgb(20, 14, 14);
@@ -52,4 +52,66 @@
     background-size:cover;
     min-height: 100vh;
 }
+
 /* Background image CSS ends */
+
+/* About section CSS starts  */
+
+.main-title {
+    font-family: 'Bruno Ace', sans-serif;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.main-content {
+    background-color: whitesmoke;
+    min-width: 600px;
+    padding: 15px;
+    opacity: .7;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: justify;
+}
+
+.main-text {
+    margin-bottom: 10px;
+    font-family: 'Alkatra', sans-serif;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+}
+
+.social-links {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 0 5px;
+}
+
+.social-links:hover {
+    opacity: .5;
+}
+
+/* About section CSS ends  */
+
+/* Media Queries Starts */
+
+@media (max-width: 425px) {
+    .main-content {
+        min-width: 300px !important;
+    } 
+  }
+
+  @media (max-width: 320px) {
+    .main-content {
+        min-width: 260px !important;
+    }
+    
+  }
+
+/* Media Queries Ends */
