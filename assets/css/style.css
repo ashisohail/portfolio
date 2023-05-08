@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Fira+Sans&display=swap');
 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,7 +15,7 @@
     display: flex;
     align-items: center; 
     background-color: whitesmoke;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -32,64 +33,55 @@
     font-family: 'Bruno Ace', sans-serif;
     font-size: small;
     font-weight: bolder;
-    color: rgb(20, 14, 14);
+    color: #d64c31;
+    /* color: rgb(218, 56, 7); */
     transition: all 0.3s ease-in-out;
 }
-
+ 
 .nav-bar > a:hover {
-    opacity: 0.5;
+    opacity: 0.7;
     transform: scale(1.1);  
-}
-
+    border-bottom: 2px solid black;
+ } 
 /* Nav bar CSS ends */
 
-/* Background image CSS starts */
-
-.bg-image {
-    background: url("../images/bg-image.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover;
-    min-height: 100vh;
-}
-
-/* Background image CSS ends */
 
 /* About section CSS starts  */
+
+.about-container {
+    display: grid;
+    grid-template-columns:  1fr auto;
+    width: 60%;
+    margin: 0px auto;
+    place-items: center;
+    height: 100vh;
+    gap: 8px;
+}
 
 .main-title {
     font-family: 'Bruno Ace', sans-serif;
     margin: 10px 0px;
-    text-align: center;
-}
-
-.main-content {
-    background-color: whitesmoke;
-    min-width: 600px;
-    padding: 15px;
-    opacity: .7;
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: justify;
+    color: #d64c31;
 }
 
 .main-text {
     margin-bottom: 10px;
-    font-family: 'Alkatra', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
 }
 
 .social-links-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center !important;
+    text-align: center;
+    margin-top: 20px; 
 }
 
 .social-links {
     text-decoration: none;
-    color: black;
-    font-size: 30px;
+    color: #d64c31;
+    font-size: 25px;
     padding: 0 5px;
 }
 
@@ -99,19 +91,25 @@
 
 /* About section CSS ends  */
 
+/* Project section starts */
+
+.project-container {
+    min-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+/* Project section ends */
+
+
 /* Media Queries Starts */
 
 @media (max-width: 425px) {
-    .main-content {
-        min-width: 300px !important;
-    } 
-  }
-
-  @media (max-width: 320px) {
-    .main-content {
-        min-width: 260px !important;
-    }
-    
+   .about-container {
+    width: 90%;
+    font-size: small;
+    /* grid-template-rows:  1fr auto; */
+   }
   }
 
 /* Media Queries Ends */
