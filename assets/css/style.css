@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-around;
     margin: 0px auto;
+    font-size: medium;
 }
 
 .nav-bar > a {
@@ -47,7 +48,7 @@
 
 
 /* About section CSS starts  */
-
+/* 
 .about-container {
     display: grid;
     grid-template-columns:  1fr auto;
@@ -55,8 +56,26 @@
     margin: 0px auto;
     place-items: center;
     height: 100vh;
-    gap: 8px;
+    gap: 24px;
+   
+} */
+
+ .main-content {
+     grid-area: about;
 }
+ .social-links-container {
+    grid-area: links;
+} 
+
+.about-container {
+    display: grid;
+    grid-template-areas:'about about links';
+    width: 60%;
+    margin: 0px auto;
+    place-items: center;
+    height: 100vh;
+    gap: 24px;   
+ } 
 
 .main-title {
     font-family: 'Bruno Ace', sans-serif;
@@ -68,6 +87,7 @@
     margin-bottom: 10px;
     font-family: 'Fira Sans', sans-serif;
     text-align: justify;
+    
 }
 
 .social-links-container {
@@ -91,25 +111,82 @@
 
 /* About section CSS ends  */
 
-/* Project section starts */
-
+/* ======== project section ======= */
 .project-container {
-    min-width: 600px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+    width: 60%;
+    margin: 0px auto;  
 }
+
+.project-container > h2 {
+    font-family: 'Bruno Ace', sans-serif;
+    color: #d64c31;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: #d64c31;
+    border-radius: 10px;
+}
+
 /* Project section ends */
+
+/* ========CSS of Contact Form ========*/
+.contact-container {
+    width: 60%;
+    border-radius: 5px;
+    margin: 0px auto;  
+}
+
+form > h2 {
+    font-family:'Bruno Ace', sans-serif;
+    margin: 10px 0px;
+    color: #d64c31;
+}
+
+form > input, textarea{
+    display: block;
+    font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.required-field::after {
+    content: "*";
+    color: red;
+} 
+
+input:focus, textarea:focus {
+    outline: none !important; 
+    border-color: #d64c31;
+    box-shadow: 0 0 5px #efc3bb;
+}
+
+
 
 
 /* Media Queries Starts */
 
 @media (max-width: 425px) {
    .about-container {
-    width: 90%;
+    /* width: 90%;
+    font-size: small;  */
     font-size: small;
-    /* grid-template-rows:  1fr auto; */
-   }
+    grid-template-areas:
+     'about'
+     'links';
+     }
+ .social-links-container {
+    flex-direction: row; 
+ }
+
   }
 
 /* Media Queries Ends */
