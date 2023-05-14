@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bd2030fcee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -39,43 +40,132 @@
             <a class="social-links" target="_blank" href="https://www.linkedin.com/in/ayesha-siddiqa-6b46a2ab/"><i
                     class="fa-brands fa-linkedin"></i></a>
             <a class="social-links" target="_blank" href="https://github.com/ashisohail"><i
-                    class="fa-brands fa-square-github"></i></a>
+                    class="fa-brands fa-square-github"> </i></a>
             <a class="social-links" href="http://"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
 
     <!-- === Skill Section === -->
-    <div class="skill-section">
 
+    <div class="skill-section">
+        <h2>My Tech Skills</h2>
+        <p class="skill-level">JustIT has given me good foundation of the following technologies. And gave me confidence
+            to work with these
+            technologies as a junior developr. </p>
+        <div class="skills-container">
+            <div class="skills">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-git"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+                <div class="skill-container">
+                    <img class="t-skill" src="./assets/images/tailwindcss.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <!-- === Project Section === -->
 
     <div class="project-container">
-        <h2>Projects</h2>
-        <div class="image-container">
-            <img src="./assets/images/css.png" width="200px" alt="">
-            <img src="./assets/images/js.png" width="200px" alt="">
-            <img src="./assets/images/js.png" width="200px" alt="">
+        <h2>My<span> Projects</span></h2>
+        <div class="projects">
+            <div class="project">
+                <div class="image-container">
+                    <img class="image" src="./assets/images/grocery-list.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <div class="icons">
+                        <h3>My Grocery List</h3>
+                        <p>Technologies used: HTML, CSS & JS.</p>
+                        <div class="project-link">
+                            <a class="source-code" href="https://github.com/ashisohail/grocery-list"
+                                target="_blank">Source Code</a>
+                            <a class="live-site" href="https://ashisohail.github.io/grocery-list/" target="_blank">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-container">
+                    <img class="image" src="./assets/images/calculator.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <div class="icons">
+                        <h3>Calculator</h3>
+                        <p>Technologies used: HTML, CSS & JS.</p>
+                        <div class="project-link">
+                            <a class="source-code" href="https://github.com/ashisohail/calculator"
+                                target="_blank">Source Code</a>
+                            <a class="live-site" href="https://ashisohail.github.io/calculator/" target="_blank">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-container">
+                    <img class="image" src="./assets/images/E.commerce-store.png" alt="">
+                </div>
+                <div class="hover-items">
+
+                    <div class="icons">
+                        <h3>Online-Store</h3>
+                        <p>Technologies used: HTML, Tailwindcss & Flowbite.</p>
+                        <div class="project-link">
+                            <a class="source-code" href="https://github.com/ashisohail/redischool-finalproject"
+                                target="_blank">Source
+                                Code</a>
+                            <a class="live-site" href="https://ashisohail.github.io/redischool-finalproject/"
+                                target="_blank">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- ===Contact Form === -->
 
     <div class="contact-container">
+        <h2>Contact Me</h2>
         <form action="#" method="post" onsubmit="validateForm ()">
-            <h2>Contact Me</h2>
 
-            <span class="required-field"></span>
-            <input type="text" id="name" placeholder="Name" required>
+            <div class="input-container">
+                <span class="required-field"></span>
+                <input type="text" id="name" placeholder="Name" required>
+            </div>
 
-            <span class="required-field"></span>
-            <input type="email" id="email" placeholder="Email" required>
+            <div class="input-container">
+                <span class="required-field"></span>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
 
-            <span class="required-field"></span>
-            <textarea id="message" name="message" placeholder="Message" style="height:100px" required></textarea>
 
+            <div class="input-container">
+                <span class="required-field"></span>
+                <textarea id="message" name="message" placeholder="Message" style="height:100px" required></textarea>
+            </div>
             <input type="submit" value="Send Message">
         </form>
     </div>
