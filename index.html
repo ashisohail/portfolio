@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===Java Script === -->
+    <script src="./script.js" defer></script>
+    <!-- ===Fontawesome === -->
     <script src="https://kit.fontawesome.com/bd2030fcee.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- ===CSS === -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio</title>
 </head>
@@ -16,9 +19,8 @@
         <nav class="nav-container">
             <div class="nav-bar">
                 <a href="">Home</a>
-                <a href="">Projects</a>
-                <a href="">Profile</a>
-                <a href="">Contact</a>
+                <a href="#project-link">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </nav>
     </header>
@@ -41,9 +43,10 @@
                     class="fa-brands fa-linkedin"></i></a>
             <a class="social-links" target="_blank" href="https://github.com/ashisohail"><i
                     class="fa-brands fa-square-github"> </i></a>
-            <a class="social-links" href="http://"><i class="fa-solid fa-envelope"></i></a>
+            <a class="social-links" href="#contact"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
+    <hr>
 
     <!-- === Skill Section === -->
 
@@ -81,11 +84,11 @@
             </div>
         </div>
     </div>
-
+    <hr>
 
     <!-- === Project Section === -->
 
-    <div class="project-container">
+    <div class="project-container" id="project-link">
         <h2>My<span> Projects</span></h2>
         <div class="projects">
             <div class="project">
@@ -144,35 +147,44 @@
             </div>
         </div>
     </div>
-
+    <hr>
     <!-- ===Contact Form === -->
 
-    <div class="contact-container">
+    <div class="contact-container" id="contact">
         <h2>Contact Me</h2>
-        <form action="#" method="post" onsubmit="validateForm ()">
+        <form action="#" method="post" onsubmit="validateForm(event)">
 
             <div class="input-container">
                 <span class="required-field"></span>
-                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="name" name="name" autocomplete="on" placeholder="Name">
             </div>
 
             <div class="input-container">
                 <span class="required-field"></span>
-                <input type="email" id="email" placeholder="Email" required>
+                <input type="email" id="email" name="email" autocomplete="on" placeholder="Email">
             </div>
 
 
             <div class="input-container">
                 <span class="required-field"></span>
-                <textarea id="message" name="message" placeholder="Message" style="height:100px" required></textarea>
+                <textarea id="message" name="message" placeholder="Message" style="height:100px"></textarea>
             </div>
             <input type="submit" value="Send Message">
         </form>
     </div>
+    <!--=========== footer ===============-->
+    <footer>
+        <div class="footer-container">
+            <p>Copyright &#169; 2023 AS</p>
+        </div>
 
-    <!-- ===Java Script === -->
-
-    <script src="script.js"></script>
+        <div class="footer-items">
+            <a class="footer-item" target="_blank" href="https://www.linkedin.com/in/ayesha-siddiqa-6b46a2ab/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a class="footer-item" target="_blank" href="https://github.com/ashisohail"><i
+                    class="fa-brands fa-square-github"> </i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -25,7 +25,7 @@ a {
     color: inherit;
     font-family: inherit;
 } */
-/* Nav bar CSS starts */
+/* ============ Nav bar ============ */
 
 .nav-container {
     height: 60px;
@@ -135,7 +135,7 @@ a {
 
 .skill-section {
     width: 80%;
-    margin: 0px auto;
+    margin: 40px auto;
     /* height: 100vh; */
  
 }
@@ -236,7 +236,7 @@ a {
 
 .project-container {
     width: 80%;
-    margin: 0px auto; 
+    margin: 40px auto; 
     /* height: 100vh; */
 }
 
@@ -309,15 +309,6 @@ a {
     background-color: #efc3bb;
 }
 
-/* .hover-items > .icons > a > i {
-    font-size: 24px;
-    margin: 0 16px;
-}  */
-
-/* .hover-items > .icons > a > i:hover {
-    background-color: rgb(199, 124, 54);
-
-} */
 
 .project:hover .hover-items {
     opacity: 0.8;
@@ -330,11 +321,11 @@ a {
 
 .contact-container {
     width: 80%;
-    margin: 0px auto; 
+    margin: 40px auto; 
 }
 
 form {
-margin: 0px auto;
+margin: 40px auto;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -384,7 +375,51 @@ input[type=submit]:hover {
 
 }
 
-/* Media Queries Starts */
+/* ========== Footer ============ */
+
+footer {
+    height: 60px;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex: 2 1; */
+}
+
+.footer-container > p {
+color: #d64c31;
+font-size: medium;
+/* width: 90%; */
+}
+
+.footer-items {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+column-gap: 20px;
+}
+
+.footer-items > a > i {
+    color: #d64c31;
+}
+
+.footer-items > a > i:hover {
+transition: all .4s ease-in-out; 
+transform: scale(1.1); 
+}
+
+/*=========== hr ============*/
+
+hr {
+    max-width: 60%;
+    border: 1px solid #d64c31;
+    margin: 40px auto;
+}
+
+
+
+/* =========== Media Queries ===========*/
 
 @media (max-width: 425px) {
 .about-container {
