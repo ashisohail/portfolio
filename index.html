@@ -11,16 +11,25 @@
     <script src="https://kit.fontawesome.com/bd2030fcee.js" crossorigin="anonymous"></script>
     <!-- ===CSS === -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ===EmailJS === -->
+
     <title>Portfolio</title>
 </head>
 
 <body>
     <header>
+        <div class="logo">
+            <a href="#">Ayesha Siddiqa</a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
         <nav class="nav-container">
             <div class="nav-bar">
                 <a href="">Home</a>
                 <a href="#project-link">Projects</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact-form">Contact</a>
             </div>
         </nav>
     </header>
@@ -43,7 +52,7 @@
                     class="fa-brands fa-linkedin"></i></a>
             <a class="social-links" target="_blank" href="https://github.com/ashisohail"><i
                     class="fa-brands fa-square-github"> </i></a>
-            <a class="social-links" href="#contact"><i class="fa-solid fa-envelope"></i></a>
+            <a class="social-links" href="#contact-form"><i class="fa-solid fa-envelope"></i></a>
         </div>
     </div>
     <hr>
@@ -150,9 +159,9 @@
     <hr>
     <!-- ===Contact Form === -->
 
-    <div class="contact-container" id="contact">
+    <div class="contact-container" id="contact-form">
         <h2>Contact Me</h2>
-        <form action="#" method="post" onsubmit="validateForm(event)">
+        <form method="POST" onsubmit="sendMail(event)">
 
             <div class="input-container">
                 <span class="required-field"></span>
@@ -185,6 +194,13 @@
                     class="fa-brands fa-square-github"> </i></a>
         </div>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('bfBxD5UCvwqm9b44t');
+        })();
+    </script>
 </body>
 
 </html>
