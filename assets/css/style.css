@@ -70,11 +70,12 @@ header {
     font-size: small;
     font-weight: bolder;
     color: #d64c31;
+    opacity: 0.8;
     transition: all 0.4s ease-in-out;
 }
  
 .nav-bar > a:hover {
-    opacity: 0.7;
+    opacity: 0.9;
     transform: scale(1.1);  
     border-bottom: 2px solid black; 
  } 
@@ -306,14 +307,14 @@ header {
     padding: 2px 6px;
     border-radius: 10px;
     margin-inline: 4px;
+    transform: scale(0);
 } 
 
 .source-code:hover, .live-site:hover{
     transition: all .4s ease-in-out; 
     transform: scale(1.1); 
-    color: black;
-    /* background-color: white; */
-    /* background-color: #efc3bb; */
+    color:#d64c31;
+    border: none;
 }
 
 .project:hover .hover-items {
@@ -327,7 +328,6 @@ header {
 .contact-container {
     width: 80%;
     margin: 80px auto; 
-    /* height: 100vh; */
 }
 
 .contact-container > h2 {
@@ -350,7 +350,6 @@ form {
 }
 
 .input-container > input,textarea, input[type=submit]{
-    /* display: block; */
     font-family: 'Fira Sans', sans-serif;
     width: 400px;
     margin-top: 6px;
@@ -403,19 +402,22 @@ footer {
 
 .footer-items > a > i {
     color: #d64c31;
+    opacity: 0.8;
+    font-size: 22px;
 }
 
 .footer-items > a > i:hover {
     transition: all .4s ease-in-out; 
     transform: scale(1.1); 
+    opacity: none;
 }
 
 
 /*=========== hr ============*/
 
 hr {
-    max-width: 60%;
-    border: 1px solid #d64c31;
+    max-width: 30%;
+    border: 0.5px solid #eba596;
     margin: 40px auto;
 }
 
@@ -423,6 +425,13 @@ hr {
 /* =========== Media Queries ===========*/
 
 @media (max-width: 425px) {
+
+ .nav-bar {
+  column-gap: 10px;
+} 
+.nav-bar > a {
+    font-size: xx-small;
+} 
 .about-container {
     /* width: 90%;
     font-size: small;  */
@@ -488,7 +497,7 @@ hr {
       top:60px;  
       left: 0;;
       width: 100%;
-      background-color:rgb(0,0,0,0.75);  
+      /* background-color:rgb(0,0,0,0.75);   */
       padding: 10px 0 25px;
       transform:translateX(100%); 
      }  
